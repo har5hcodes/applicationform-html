@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+
+    <style>
+        body {
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 0.2rem;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        form {
+            border: 3px solid rgb(77, 76, 76);
+            font-family: monospace;
+            font-size: medium;
+            padding: 20px;
+            background-color: white;
+        }
+
+        button {
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Internship Opportunity</h1>
+    <div class="container">
+        <form action="">
+
+            <label for="name">Name:</label>
+            <input type="text" name="" id="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email" required>
+            <br><br>
+
+            <label for="mob-numb">Mobile:</label>
+            <input type="tel" id="mob-numb" name="" pattern="[0-9]{10}">
+            <br><br>
+
+            <label for="college">College:</label>
+            <input type="text" name="" id="college">
+            <br><br>
+
+            <label for="department">Branch of study:</label>
+            <input type="text" name="" id="department">
+
+            <br><br>
+            Graduating year: <br>
+            <label>
+                <input type="radio" name="two" value="two" required>2022
+            </label>
+            <label>
+                <input type="radio" name="three" value="three">2023
+            </label>
+            <label>
+                <input type="radio" name="four" value="four">2024
+            </label>
+            <br><br>
+            <label for="cgpa">CGPA (scale of 10):</label>
+            <input type="number" step="any" id="cgpa" name="" min="5" max="10" required>
+
+            <p>Application Profile: <br>
+                <input type="checkbox" id="fed" name="vehicle1" value="Bike">
+                <label for="fed">Front-End Developer</label><br>
+                <input type="checkbox" id="bed" name="vehicle2" value="Car">
+                <label for="bed">Back-End Developer</label><br>
+                <input type="checkbox" id="fsd" name="vehicle3" value="Boat">
+                <label for="fsd">Full Stack Developr</label><br>
+            </p>
+
+
+            <label for="file">Upload your <strong>RESUME</strong> here:</label>
+            <br><br>
+            <input type="file" id="file" name="" accept="application/pdf" required>
+
+
+            <br> <br>
+            <!-- application profile-->
+            <!-- graduating year -->
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
